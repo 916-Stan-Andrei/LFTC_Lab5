@@ -1,0 +1,19 @@
+Github: https://github.com/916-Stan-Andrei/LFTC_Lab5
+Collaborator: Serban Alexandru
+
+Class Grammar represent a context-free grammar (CFG) and provides methods to read the grammar from a file, check if it adheres to CFG rules, and generate a string representation of the grammar.
+
+Fields:
+
+    EPSILON: A constant representing the epsilon symbol used in the grammar.
+    nonterminals: List of strings representing non-terminal symbols.
+    terminals: List of strings representing terminal symbols.
+    startingSymbol: The starting symbol for the grammar.
+    productions: Map representing the production rules. Key is the non-terminal symbol, value is a list of strings representing productions.
+
+Methods:
+
+    processLine(String line, String delimiter): Private method to process a line from the file and extract elements based on a delimiter.
+    readFromFile(String fileName): Reads the grammar from a file, populates the non-terminals, terminals, starting symbol, and production rules.
+    checkCFG(): Checks if the grammar adheres to CFG rules, verifying the presence of the starting symbol and ensuring that all symbols used in productions are either non-terminals, terminals, or epsilon.
+    toString(): Overrides the toString() method to generate a string representation of the grammar.
